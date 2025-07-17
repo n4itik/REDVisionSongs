@@ -1,50 +1,29 @@
-# Welcome to your Expo app 👋
+# <img src="assets/images/splash-icon.png" height="24"> REDVisionSongs
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native app built using **Expo Router** that fetches and displays a list of songs using the iTunes Search API.
 
-## Get started
 
-1. Install dependencies
+## Screens
 
-   ```bash
-   npm install
-   ```
+<img src="assets/images/splash.png" height="300"> <img src="assets/images/loading.png" height="300"> <img src="assets/images/list.png" height="300"> <img src="assets/images/refreshing.png" height="300"> <img src="assets/images/details.png" height="300">
 
-2. Start the app
+### Splash Screen
+Custom splash shown for 2–3 seconds before main content loads.
 
-   ```bash
-   npx expo start
-   ```
+### Loading Screen
+Displays a centered loading indicator while fetching data.
 
-In the output, you'll find options to open the app in a
+### Songs List
+- Displays fetched songs in a styled FlatList (with image, title, artist, duration).
+- Includes pull-to-refresh support.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Song Detail
+- Opens on tapping a song.
+- Shows song artwork, title, artist, and duration.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
-
-When you're ready, run:
+## Run Locally
 
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+npm install
+npx expo start
